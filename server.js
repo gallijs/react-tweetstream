@@ -31,7 +31,9 @@ var server = http.createServer(app).listen(port, function() {
 
 var io = require('socket.io').listen(server);
 
-var stream = T.stream('statuses/sample');
+var puertoRico = [ '-67.28', '17.88', '-65.21', '18.52' ];
+
+var stream = T.stream('statuses/filter', { locations: puertoRico });
 
 io.sockets.on('connection', function (socket) {
   stream.on('tweet', function(tweet) {

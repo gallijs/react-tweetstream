@@ -1,0 +1,25 @@
+.page-header{
+  padding-left: 50px;
+}
+
+.panel{
+  img{
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    margin: 10px;
+    border: 2px solid #ccc;
+  }
+  .panel-heading{
+    a{
+      display: inline-block;
+      padding-right: 5px;
+      margin-right: 5px;
+      text-decoration: none;
+      color: #1abc9c;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+}
